@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}AI-Powered PACS Project - AI Hub{% endblock %}
+
+{% block content %}
+<!-- PACS Hero -->
+<section class="pacs-hero">
+    <div class="container">
+        <div class="pacs-header">
+            <div class="pacs-icon">🧠</div>
+            <h1>AI-Powered PACS for Brain Hemorrhage Detection</h1>
+            <p class="subtitle">Faster, Life-Saving Diagnosis</p>
+        </div>
+    </div>
+</section>
+
+<!-- Problem & Solution -->
+<section class="problem-solution-section">
+    <div class="container">
+        <div class="two-column">
+            <div class="problem-box">
+                <h2>The Problem</h2>
+                <div class="problem-content">
+                    <h3>Brain hemorrhage = life-threatening emergency</h3>
+                    <p>Early detection saves lives, but hospitals face critical challenges:</p>
+                    <ul>
+                        <li>Few radiologists available</li>
+                        <li>Long review delays (hours to days)</li>
+                        <li>Doctors must make urgent decisions alone</li>
+                        <li>CT scan taken → hours/days wait → risk increases</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="solution-box">
+                <h2>Our Solution</h2>
+                <div class="solution-content">
+                    <h3>PACS + AI Integration</h3>
+                    <p>Our system provides three critical capabilities:</p>
+                    <ul>
+                        <li><strong>Secure Image Storage:</strong> Centralized, HIPAA-compliant storage</li>
+                        <li><strong>Auto Analysis:</strong> AI automatically analyzes CT scans</li>
+                        <li><strong>Flag Urgent Cases:</strong> Instant alerts for critical findings</li>
+                    </ul>
+                    <p class="highlight">Result: Immediate detection and faster treatment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="workflow">
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <h3>CT Scan Upload</h3>
+                <p>Medical images are uploaded to the secure PACS system</p>
+            </div>
+            <div class="workflow-arrow">→</div>
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <h3>AI Analysis</h3>
+                <p>AI automatically analyzes the scan for hemorrhage indicators</p>
+            </div>
+            <div class="workflow-arrow">→</div>
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <h3>Alert & Report</h3>
+                <p>System flags urgent cases and notifies medical staff immediately</p>
+            </div>
+            <div class="workflow-arrow">→</div>
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <h3>Fast Treatment</h3>
+                <p>Doctors can act quickly with AI-assisted diagnosis</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="benefits-section">
+    <div class="container">
+        <h2>Key Benefits</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">❤️</div>
+                <h3>For Patients</h3>
+                <p>Faster treatment and better outcomes through early detection</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">👨‍⚕️</div>
+                <h3>For Doctors</h3>
+                <p>Reduced workload with AI-assisted decision making</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏥</div>
+                <h3>For Hospitals</h3>
+                <p>Less delays and more efficient resource utilization</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3>For Health Systems</h3>
+                <p>Cost-effective solution using existing infrastructure</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conclusion -->
+<section class="conclusion-section">
+    <div class="container">
+        <div class="conclusion-box">
+            <h2>Impact</h2>
+            <p class="large-text">Brain hemorrhage is deadly but detectable. AI in PACS enables faster, equitable diagnosis using existing hospital systems.</p>
+            <div class="stats-row">
+                <div class="stat">
+                    <h3>Seconds</h3>
+                    <p>AI analysis time</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Continuous monitoring</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Scan coverage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Interested in Implementing PACS?</h2>
+        <p>Contact us to learn how we can help your hospital implement AI-powered PACS</p>
+        <a href="{{ url_for('contact') }}" class="btn-primary">Get in Touch</a>
+    </div>
+</section>
+{% endblock %}

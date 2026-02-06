@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+
+{% block title %}Home - AI & Digital Innovation Hub{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🌍 Empowering Africa's AI Future</div>
+        <h1>Your Partner to <span class="gradient-text">Leap Into the Future</span><br>with Artificial Intelligence</h1>
+        <p class="hero-tagline">We don't just deliver AI solutions—we build the people, systems, and partnerships that will sustain AI innovation across Africa and beyond.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('services') }}" class="btn-primary">Explore Our Services</a>
+            <a href="{{ url_for('contact') }}" class="btn-secondary">Partner With Us</a>
+        </div>
+        <div class="trust-badges">
+            <span>✓ African Expertise</span>
+            <span>✓ Proven Results</span>
+            <span>✓ Affordable Solutions</span>
+            <span>✓ 24/7 Support</span>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="stat-card">
+        <h3>6+</h3>
+        <p>Target Audiences Served</p>
+    </div>
+    <div class="stat-card">
+        <h3>3</h3>
+        <p>Core Service Pillars</p>
+    </div>
+    <div class="stat-card">
+        <h3>100%</h3>
+        <p>Local Talent Development</p>
+    </div>
+    <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Project Support</p>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose AI Hub?</h2>
+            <p>We stand out from other AI companies with our unique approach to building sustainable local capacity across Africa</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">🎯</div>
+                <h3>100% African Focus</h3>
+                <p>Unlike imported solutions, we build with African talent for African needs, creating sustainable value that stays in our communities.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">💡</div>
+                <h3>Hands-On Learning</h3>
+                <p>Not just theory—we train people on real projects with real impact, building portfolios that get jobs.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">💰</div>
+                <h3>Affordable Excellence</h3>
+                <p>World-class AI expertise at local prices. No need for expensive foreign consultants.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🤝</div>
+                <h3>End-to-End Support</h3>
+                <p>From idea to deployment, we're with you every step—training, development, and ongoing support.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🚀</div>
+                <h3>Proven Track Record</h3>
+                <p>Real projects like our AI-Powered PACS system saving lives in hospitals today.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🌍</div>
+                <h3>Global Standards, Local Impact</h3>
+                <p>African talent, international quality. We follow best practices from leading AI companies worldwide while solving local challenges.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Project -->
+<section class="featured-project">
+    <div class="container">
+        <div class="section-tag">Live Project</div>
+        <h2>AI in Action: Saving Lives Today</h2>
+        <div class="project-card-enhanced">
+            <div class="project-content">
+                <div class="project-badge">Healthcare AI</div>
+                <h3>AI-Powered PACS for Brain Hemorrhage Detection</h3>
+                <p class="project-subtitle">Faster, Life-Saving Diagnosis</p>
+                <p>Our AI system detects brain hemorrhages in CT scans within seconds, providing secure image storage, automatic analysis, and instant alerts for urgent cases—helping doctors save lives faster.</p>
+                
+                <div class="project-stats-mini">
+                    <div class="mini-stat">
+                        <strong>< 10s</strong>
+                        <span>Analysis Time</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>24/7</strong>
+                        <span>Monitoring</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>100%</strong>
+                        <span>Coverage</span>
+                    </div>
+                </div>
+                
+                <a href="{{ url_for('pacs') }}" class="btn-primary">View Full Case Study →</a>
+            </div>
+            <div class="project-visual">
+                <div class="project-icon-large">🧠</div>
+                <div class="tech-badges">
+                    <span>Computer Vision</span>
+                    <span>Deep Learning</span>
+                    <span>Medical AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <h3>Skills Development</h3>
+                <p>Train people inside a real AI working environment with hands-on experience.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Help organizations use data for better decisions with affordable local expertise.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Innovation Support</h3>
+                <p>Support innovators to turn ideas into real products with technical guidance.</p>
+            </div>
+        </div>
+        <div class="center-btn">
+            <a href="{{ url_for('services') }}" class="btn-secondary">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Our Network</div>
+            <h2>Trusted Partners & Collaborators</h2>
+            <p>We collaborate with leading organizations across Africa to deliver world-class AI solutions</p>
+        </div>
+        
+        <div class="partners-grid">
+            <div class="partner-card">
+                <div class="partner-logo">🏥</div>
+                <h4>Healthcare Institutions</h4>
+                <p>Implementing AI-powered diagnostic systems in hospitals across the region</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">🎓</div>
+                <h4>Universities</h4>
+                <p>Partnering with academic institutions for research and talent development</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">🏢</div>
+                <h4>Private Sector</h4>
+                <p>Helping businesses leverage data analytics and automation across industries</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">🌐</div>
+                <h4>Tech Communities</h4>
+                <p>Active members of African and global AI and developer communities</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">💼</div>
+                <h4>Startups & Innovators</h4>
+                <p>Supporting African innovators with technical expertise and mentorship</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">🏛️</div>
+                <h4>Government & NGOs</h4>
+                <p>Contributing to digital transformation and development initiatives</p>
+            </div>
+        </div>
+        
+        <div class="partner-cta">
+            <h3>Want to Partner With Us?</h3>
+            <p>Join our growing network of organizations committed to AI excellence in Africa</p>
+            <a href="{{ url_for('contact') }}" class="btn-secondary">Become a Partner</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Transform Your Business with AI?</h2>
+        <p>We're not just building AI solutions—we're building the people and systems that will sustain AI across Africa. Whether you're a student, professional, company, or innovator, we're here to help you succeed.</p>
+        <div class="cta-buttons">
+            <a href="{{ url_for('contact') }}" class="btn-primary">Start Your AI Journey</a>
+            <a href="{{ url_for('services') }}" class="btn-secondary">View All Services</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

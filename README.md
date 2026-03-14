@@ -49,6 +49,26 @@ pip install -r requirements.txt
 This will install Flask and other necessary packages.
 
 ## ▶️ Running the Website
+Before running the website Here is how you set the email for contact form 
+if you're going to use gmail as sender here are the step to follow to set it up
+
+- **Enable 2-Step Verification (required first)**
+    - Go to [myaccount.google.com](https://myaccount.google.com)
+    - Click **Security** in the left sidebar
+    - Under "How you sign in to Google", click **2-Step Verification** and enable it
+
+- **Generate an App Password**
+    - Go to [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
+    - In the "App name" field, type something like `Kenshi Website`
+    - Click **Create**
+    - Google will show you a **16-character password** (e.g. `abcd efgh ijkl mnop`) — copy it
+
+- **Update the environment variable**
+```bash
+# Remove the spaces when setting it
+export KENSHI_EMAIL_USER="kenshi.ltd@gmail.com"
+export KENSHI_EMAIL_PASSWORD="App Password"   # 16 chars, no spaces
+```
 
 ### Method 1: Simple Run (Recommended for Beginners)
 

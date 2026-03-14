@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}AI & Digital Innovation Hub{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/kenshi-logo.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">AI HUB</div>
+            <a href="{{ url_for('home') }}" class="logo">
+                <img src="{{ url_for('static', filename='img/kenshi-logo.png') }}" alt="Kenshi.AI logo" class="logo-mark">
+                <span class="logo-text">KENSHI.AI</span>
+            </a>
             <ul class="nav-menu">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('services') }}">Services</a></li>
-                <li><a href="{{ url_for('pacs') }}">PACS Project</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
                 <li><a href="{{ url_for('contact') }}" class="nav-cta">Contact</a></li>
             </ul>
         </div>
@@ -25,6 +29,16 @@
     <main>
         {% block content %}{% endblock %}
     </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/250783192785?text=Hello%20Kenshi%20AI%20Hub%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20AI%20solutions%20and%20training."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener">
+        <img src="{{ url_for('static', filename='img/whatsapp.png') }}"
+             alt="Chat with us on WhatsApp"
+             class="whatsapp-icon">
+    </a>
 
     <!-- Footer -->
     <footer>
@@ -40,18 +54,20 @@
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('services') }}">Services</a></li>
-                    <li><a href="{{ url_for('pacs') }}">PACS Project</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83eaede5ecc3e2eaebf6e1ade0ecee">[email&#160;protected]</a></p>
-                <p>Phone: +250 XXX XXX XXX</p>
+                <p>Email: <a href="mailto:kenshi.ltd@gmail.com">kenshi.ltd@gmail.com</a></p>
+                <p>Phone: +250 783 192 785</p>
                 <p>Location: Kigali, Rwanda</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 AI & Digital Innovation Hub. All rights reserved. Building the future of AI across Africa.</p>
         </div>
-    
+    </footer>
+</body>
+</html>

@@ -70,6 +70,13 @@ export KENSHI_EMAIL_USER="kenshi.ltd@gmail.com"
 export KENSHI_EMAIL_PASSWORD="App Password"   # 16 chars, no spaces
 ```
 
+For windows 
+```bash
+# Remove the spaces when setting it
+set KENSHI_EMAIL_USER="kenshi.ltd@gmail.com"
+set KENSHI_EMAIL_PASSWORD="App Password"   # 16 chars, no spaces
+```
+
 ### Method 1: Simple Run (Recommended for Beginners)
 
 Just run this command in your terminal:

@@ -22,6 +22,10 @@
                 <li><a href="{{ url_for('projects') }}">Projects</a></li>
                 <li><a href="{{ url_for('contact') }}" class="nav-cta">Contact</a></li>
             </ul>
+            <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to light mode" title="Switch theme">
+                <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+                <span class="theme-toggle-label">Light</span>
+            </button>
         </div>
     </nav>
 
@@ -69,5 +73,7 @@
             <p>&copy; 2026 AI & Digital Innovation Hub. All rights reserved. Building the future of AI across Africa.</p>
         </div>
     </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

@@ -1,49 +1,63 @@
 {% extends "base.html" %}
 
-{% block title %}AI-Powered PACS Project - AI Hub{% endblock %}
+{% block title %}RadAIx - Kenshi.AI{% endblock %}
 
 {% block content %}
-<!-- PACS Hero -->
+<!-- RadAIx Hero -->
 <section class="pacs-hero">
     <div class="container">
         <div class="pacs-header">
-            <div class="pacs-icon">🧠</div>
-            <h1>AI-Powered PACS for Brain Hemorrhage Detection</h1>
-            <p class="subtitle">Faster, Life-Saving Diagnosis</p>
+            <div class="pacs-hero-icons" aria-hidden="true">
+                <span>🧠</span>
+                <span class="plus">+</span>
+                <span>🏥</span>
+            </div>
+            <div class="label label-orange" style="margin:0 auto 20px">🚀 Live Project</div>
+            <h1>RadAIx</h1>
+            <p class="subtitle">Intelligent imaging for faster, life-saving diagnostics - built in Rwanda for Africa.</p>
+            <div class="badge-row" aria-label="RadAIx key points">
+                <span class="badge">First module: Intracranial Hemorrhage Detection</span>
+                <span class="badge">Real-time AI analysis</span>
+                <span class="badge">Built in Rwanda</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Problem & Solution -->
+<!-- The Problem -->
 <section class="problem-solution-section">
     <div class="container">
-        <div class="two-column">
-            <div class="problem-box">
-                <h2>The Problem</h2>
-                <div class="problem-content">
-                    <h3>Brain hemorrhage = life-threatening emergency</h3>
-                    <p>Early detection saves lives, but hospitals face critical challenges:</p>
-                    <ul>
-                        <li>Few radiologists available</li>
-                        <li>Long review delays (hours to days)</li>
-                        <li>Doctors must make urgent decisions alone</li>
-                        <li>CT scan taken → hours/days wait → risk increases</li>
-                    </ul>
-                </div>
+        <div class="challenge-block">
+            <p class="big-text">
+                In Rwanda, there is <strong>1 radiologist per 1.5 million people</strong> - far below the WHO recommendation of 1 per 100,000.
+                A brain hemorrhage patient can wait hours or days for diagnosis. <strong>Every hour of delay increases mortality risk by 20%.</strong>
+            </p>
+        </div>
+
+        <div class="section-header">
+            <h2>Before and After RadAIx</h2>
+            <p>RadAIx turns scans into actionable clinical alerts - faster, safer, smarter.</p>
+        </div>
+
+        <div class="compare-grid">
+            <div class="compare-card bad">
+                <h3>Without RadAIx</h3>
+                <ul>
+                    <li>CT scan waits in queue for hours or days</li>
+                    <li>Manual prioritization of urgent cases</li>
+                    <li>Subtle hemorrhages may be missed</li>
+                    <li class="outcome">Delayed treatment - higher mortality risk</li>
+                </ul>
             </div>
-            
-            <div class="solution-box">
-                <h2>Our Solution</h2>
-                <div class="solution-content">
-                    <h3>PACS + AI Integration</h3>
-                    <p>Our system provides three critical capabilities:</p>
-                    <ul>
-                        <li><strong>Secure Image Storage:</strong> Centralized, HIPAA-compliant storage</li>
-                        <li><strong>Auto Analysis:</strong> AI automatically analyzes CT scans</li>
-                        <li><strong>Flag Urgent Cases:</strong> Instant alerts for critical findings</li>
-                    </ul>
-                    <p class="highlight">Result: Immediate detection and faster treatment</p>
-                </div>
+            <div class="compare-card good">
+                <h3>With RadAIx</h3>
+                <ul>
+                    <li>CT scan gets instant AI analysis</li>
+                    <li>Results delivered in under 10 seconds</li>
+                    <li>Automatic urgent-case flagging</li>
+                    <li>Visual heatmaps highlighting bleeding areas</li>
+                    <li class="outcome">Immediate alerts - faster intervention</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -52,83 +66,138 @@
 <!-- How It Works -->
 <section class="how-it-works">
     <div class="container">
-        <h2>How It Works</h2>
-        <div class="workflow">
+        <div class="section-header">
+            <h2>How RadAIx Works</h2>
+            <p>A 5-step workflow from scan upload to real-time clinical alerts.</p>
+        </div>
+
+        <div class="workflow-steps">
             <div class="workflow-step">
-                <div class="step-number">1</div>
-                <h3>CT Scan Upload</h3>
-                <p>Medical images are uploaded to the secure PACS system</p>
+                <div class="step-num">01</div>
+                <div>
+                    <h3>CT Scan Upload</h3>
+                    <p>Medical images are uploaded to RadAIx through standard DICOM workflows - no disruption for hospital staff.</p>
+                </div>
             </div>
-            <div class="workflow-arrow">→</div>
             <div class="workflow-step">
-                <div class="step-number">2</div>
-                <h3>AI Analysis</h3>
-                <p>AI automatically analyzes the scan for hemorrhage indicators</p>
+                <div class="step-num">02</div>
+                <div>
+                    <h3>AI Analysis</h3>
+                    <p>Deep learning analyzes each slice and detects hemorrhage subtypes.</p>
+                    <div class="subtype-tags" aria-label="Hemorrhage subtypes">
+                        <span>Intraparenchymal (IPH)</span>
+                        <span>Subarachnoid (SAH)</span>
+                        <span>Subdural (SDH)</span>
+                        <span>Epidural (EDH)</span>
+                        <span>Intraventricular (IVH)</span>
+                    </div>
+                </div>
             </div>
-            <div class="workflow-arrow">→</div>
             <div class="workflow-step">
-                <div class="step-number">3</div>
-                <h3>Alert & Report</h3>
-                <p>System flags urgent cases and notifies medical staff immediately</p>
+                <div class="step-num">03</div>
+                <div>
+                    <h3>Visual Intelligence</h3>
+                    <p>Generates heatmaps and confidence scores (0-100%) to explain what the model is seeing.</p>
+                </div>
             </div>
-            <div class="workflow-arrow">→</div>
             <div class="workflow-step">
-                <div class="step-number">4</div>
-                <h3>Fast Treatment</h3>
-                <p>Doctors can act quickly with AI-assisted diagnosis</p>
+                <div class="step-num">04</div>
+                <div>
+                    <h3>Priority Flagging</h3>
+                    <p>Suspected hemorrhages move to the top of the worklist with urgency indicators.</p>
+                </div>
+            </div>
+            <div class="workflow-step">
+                <div class="step-num">05</div>
+                <div>
+                    <h3>Clinical Alert</h3>
+                    <p>Real-time notifications can reach emergency teams so treatment can start sooner.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Technical Features -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Built for Real-World Healthcare</h2>
+            <p>Designed for African hospitals, including low-connectivity environments.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>Seamless Integration</h3>
+                <p>Connects to existing PACS via DICOM for minimal IT burden and no workflow changes for clinicians.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Works in Low Connectivity</h3>
+                <p>Designed to function reliably in constrained environments and support notifications for remote consultations.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Learns Over Time</h3>
+                <p>Radiologist feedback can help improve performance and adapt to local data over time.</p>
+            </div>
+            <div class="tech-card">
+                <h3>Secure by Design</h3>
+                <p>Security-first approach with encryption and access controls suitable for clinical environments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Impact Metrics -->
+<div class="impact-metrics">
+    <div class="impact-stat"><span class="num">20%</span><span class="lbl">Mortality risk per hour of delay</span></div>
+    <div class="impact-stat"><span class="num">&lt;10s</span><span class="lbl">AI analysis time</span></div>
+    <div class="impact-stat"><span class="num">24/7</span><span class="lbl">Continuous screening</span></div>
+    <div class="impact-stat"><span class="num">1.5M:1</span><span class="lbl">Radiologist gap we're bridging</span></div>
+</div>
 
 <!-- Benefits -->
 <section class="benefits-section">
     <div class="container">
-        <h2>Key Benefits</h2>
+        <div class="section-header">
+            <h2>Who It Helps</h2>
+            <p>Faster detection supports better outcomes for patients and more efficient workflows for clinicians.</p>
+        </div>
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">❤️</div>
-                <h3>For Patients</h3>
-                <p>Faster treatment and better outcomes through early detection</p>
+                <h3>Patients</h3>
+                <p>Earlier detection of life-threatening conditions for faster treatment and better outcomes.</p>
             </div>
             <div class="benefit-card">
                 <div class="benefit-icon">👨‍⚕️</div>
-                <h3>For Doctors</h3>
-                <p>Reduced workload with AI-assisted decision making</p>
+                <h3>Radiologists</h3>
+                <p>Reduced workload with AI-assisted triage and decision support.</p>
             </div>
             <div class="benefit-card">
                 <div class="benefit-icon">🏥</div>
-                <h3>For Hospitals</h3>
-                <p>Less delays and more efficient resource utilization</p>
+                <h3>Hospitals</h3>
+                <p>Reduced diagnostic delays and better resource utilization using existing infrastructure.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon">💰</div>
-                <h3>For Health Systems</h3>
-                <p>Cost-effective solution using existing infrastructure</p>
+                <div class="benefit-icon">🌍</div>
+                <h3>Health Systems</h3>
+                <p>More equitable access to diagnostics regardless of location or time of day.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Conclusion -->
+<!-- Roadmap -->
 <section class="conclusion-section">
     <div class="container">
         <div class="conclusion-box">
-            <h2>Impact</h2>
-            <p class="large-text">Brain hemorrhage is deadly but detectable. AI in PACS enables faster, equitable diagnosis using existing hospital systems.</p>
-            <div class="stats-row">
-                <div class="stat">
-                    <h3>Seconds</h3>
-                    <p>AI analysis time</p>
-                </div>
-                <div class="stat">
-                    <h3>24/7</h3>
-                    <p>Continuous monitoring</p>
-                </div>
-                <div class="stat">
-                    <h3>100%</h3>
-                    <p>Scan coverage</p>
-                </div>
+            <h2>RadAIx: Scalable Diagnostic Platform</h2>
+            <p class="large-text">RadAIx is modular - additional diagnostic modules are coming as we expand capability across imaging workflows.</p>
+            <div class="module-pills" aria-label="Upcoming modules">
+                <span class="module-pill">Ischemic Stroke Detection</span>
+                <span class="module-pill">Pulmonary Embolism</span>
+                <span class="module-pill">Fracture Detection</span>
+                <span class="module-pill">Mass Effect and Tumors</span>
+                <span class="module-pill">Chest X-Ray Analysis</span>
             </div>
         </div>
     </div>
@@ -137,9 +206,12 @@
 <!-- CTA -->
 <section class="cta-section">
     <div class="container">
-        <h2>Interested in Implementing AI-powered PACS?</h2>
-        <p>Contact us to learn how we can help your hospital implement AI-powered PACS</p>
-        <a href="{{ url_for('contact') }}" class="btn-primary">Get in Touch</a>
+        <h2>Bring RadAIx to Your Hospital</h2>
+        <p>Partner with Kenshi.AI to deploy RadAIx and accelerate imaging diagnostics.</p>
+        <div class="cta-buttons">
+            <a href="{{ url_for('contact') }}" class="btn-primary">Request a Demo</a>
+            <a href="{{ url_for('services') }}" class="btn-secondary">View Services</a>
+        </div>
     </div>
 </section>
 {% endblock %}

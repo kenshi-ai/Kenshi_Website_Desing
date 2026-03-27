@@ -12,14 +12,64 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Theme toggle (default is dark)
+function getCssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
+function applyTheme(theme) {
+    if (theme === 'light') {
+        document.documentElement.dataset.theme = 'light';
+    } else {
+        delete document.documentElement.dataset.theme;
+    }
+}
+
+function updateThemeToggleUi() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+
+    const isLight = document.documentElement.dataset.theme === 'light';
+    const icon = btn.querySelector('.theme-toggle-icon');
+    const label = btn.querySelector('.theme-toggle-label');
+
+    if (icon) icon.textContent = isLight ? '☾' : '☀';
+    if (label) label.textContent = isLight ? 'Dark' : 'Light';
+    btn.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+}
+
+function setNavbarBgForScroll() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    navbar.style.background = window.scrollY > 50 ? getCssVar('--nav-bg-scrolled') : getCssVar('--nav-bg');
+}
+
+try {
+    const storedTheme = localStorage.getItem('kenshi-theme');
+    applyTheme(storedTheme === 'light' ? 'light' : 'dark');
+} catch (_) {
+    applyTheme('dark');
+}
+
+updateThemeToggleUi();
+setNavbarBgForScroll();
+
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        applyTheme(next);
+        try {
+            localStorage.setItem('kenshi-theme', next);
+        } catch (_) {}
+        updateThemeToggleUi();
+        setNavbarBgForScroll();
+    });
+}
+
 // Navbar background on scroll
 window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(13, 17, 23, 0.98)';
-    } else {
-        navbar.style.background = 'rgba(13, 17, 23, 0.95)';
-    }
+    setNavbarBgForScroll();
 });
 
 // Form validation

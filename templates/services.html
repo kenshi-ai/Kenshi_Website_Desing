@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Services - Kenshi.AI{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Comprehensive AI and digital innovation services designed to build real capabilities and deliver real impact</p>
+    </div>
+</section>
+
+<section class="services-detail">
+    <div class="container">
+        <div class="service-detail-card">
+            <div class="service-icon-large">📊</div>
+            <h2>Data Analytics & Automation</h2>
+            <p class="service-desc">
+                We help organizations turn raw data into clear, actionable insight. Our team designs analytics and automation
+                workflows that improve decision-making, reduce manual work, and create measurable value.
+            </p>
+            
+            <h3>What We Offer:</h3>
+            <ul class="service-list">
+                <li>AI-powered solutions and process automation</li>
+                <li>Data collection and cleaning</li>
+                <li>Business intelligence dashboards</li>
+                <li>Predictive analytics</li>
+            </ul>
+            
+            <div class="service-features">
+                <div class="feature">✓ Affordable solutions</div>
+                <div class="feature">✓ Local expertise</div>
+                <div class="feature">✓ Ongoing support</div>
+            </div>
+        </div>
+
+        <div class="service-detail-card">
+            <div class="service-icon-large">💡</div>
+            <h2>Innovation Support</h2>
+            <p class="service-desc">
+                We partner with innovators to move from concept to deployed solution. From early validation to technical
+                architecture and prototyping, we provide the AI and software expertise needed to ship real products.
+            </p>
+            
+            <h3>What We Offer:</h3>
+            <ul class="service-list">
+                <li>Idea validation and refinement</li>
+                <li>Technical feasibility assessment</li>
+                <li>Prototype development</li>
+                <li>Product launch support</li>
+            </ul>
+            
+            <div class="service-features">
+                <div class="feature">✓ Expert guidance</div>
+                <div class="feature">✓ Technical resources</div>
+                <div class="feature">✓ Startup ecosystem</div>
+            </div>
+        </div>
+
+        <div class="service-detail-card">
+            <div class="service-icon-large">🎓</div>
+            <h2>Skills Development</h2>
+            <p class="service-desc">
+                We develop talent by training people inside a real AI working environment. From first exposure to programming
+                to advanced applied AI projects, participants build portfolios based on real use cases, not just theory.
+            </p>
+            
+            <h3>What We Offer:</h3>
+            <ul class="service-list">
+                <li>High school students – foundations in programming and computational thinking</li>
+                <li>University students – AI & computer science internships on real projects</li>
+                <li>Data science learners – end‑to‑end AI project experience and mentoring</li>
+                <li>Professionals & teams – practical AI upskilling and coaching for their domain</li>
+            </ul>
+            
+            <div class="service-features">
+                <div class="feature">✓ Hands-on projects</div>
+                <div class="feature">✓ Real-world experience</div>
+                <div class="feature">✓ Industry mentorship</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="who-we-serve">
+    <div class="container">
+        <h2>Who We Support</h2>
+        <div class="audience-grid">
+            <div class="audience-card">
+                <div class="audience-emoji">🏢</div>
+                <h3>Companies</h3>
+                <p>Data analytics & automation for business growth</p>
+            </div>
+            <div class="audience-card">
+                <div class="audience-emoji">💻</div>
+                <h3>Data Science Learners</h3>
+                <p>Hands-on AI project experience in production environments</p>
+            </div>
+            <div class="audience-card">
+                <div class="audience-emoji">👔</div>
+                <h3>Professionals</h3>
+                <p>Basic AI training & coaching for career advancement</p>
+            </div>
+            <div class="audience-card">
+                <div class="audience-emoji">🚀</div>
+                <h3>Innovators</h3>
+                <p>Idea-to-prototype support with technical expertise</p>
+            </div>
+            <div class="audience-card">
+                <div class="audience-emoji">🎓</div>
+                <h3>University Students</h3>
+                <p>AI & computer science internships with real-world projects</p>
+            </div>
+            <div class="audience-card">
+                <div class="audience-emoji">🎒</div>
+                <h3>High School Students</h3>
+                <p>Introduction to programming and computational thinking</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Let's discuss how we can help you achieve your goals</p>
+        <a href="{{ url_for('contact') }}" class="btn-primary">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

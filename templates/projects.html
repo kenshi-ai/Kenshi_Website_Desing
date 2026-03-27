@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Kenshi.AI{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Projects</h1>
+        <p>Real solutions we build for institutions and businesses using AI and modern technology.</p>
+    </div>
+</section>
+
+<section class="services-detail">
+    <div class="container">
+        <div class="service-detail-card">
+            <div class="service-icon-large">🏥</div>
+            <h2>AI-Powered PACS for Brain Hemorrhage Detection</h2>
+            <p class="service-desc">
+                Brain hemorrhage is a life-threatening emergency where minutes matter. This project integrates a secure PACS with
+                AI that automatically analyzes CT scans, flags urgent cases, and alerts clinicians so that treatment can start faster.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: flex-start;">
+                <a href="{{ url_for('pacs') }}" class="btn-primary">Read more about this project →</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

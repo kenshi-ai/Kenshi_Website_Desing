@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Kenshi.AI{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🇷🇼 Made in Rwanda · Built for Africa</div>
+        <h1>Building Africa’s Future<br><span class="gradient-text">with Practical AI</span></h1>
+        <p class="hero-tagline">From Kigali, we develop AI-powered software, train local talent, and build solutions that solve real problems - starting with RadAIx.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('services') }}" class="btn-primary">Explore Solutions</a>
+            <a href="{{ url_for('pacs') }}" class="btn-secondary">View RadAIx →</a>
+        </div>
+        <div class="trust-badges">
+            <span>✓ AI Built in Rwanda</span>
+            <span>✓ RadAIx Live Project</span>
+            <span>✓ Local Talent Development</span>
+            <span>✓ Vision 2050 Aligned</span>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="stat-card">
+        <h3>1.5M:1</h3>
+        <p>Radiologist gap we're bridging</p>
+    </div>
+    <div class="stat-card">
+        <h3>&lt;10s</h3>
+        <p>AI brain hemorrhage analysis</p>
+    </div>
+    <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Continuous intelligent screening</p>
+    </div>
+    <div class="stat-card">
+        <h3>100%</h3>
+        <p>Local African talent</p>
+    </div>
+</section>
+
+<!-- RadAIx Spotlight -->
+<section class="featured-project">
+    <div class="container">
+        <div class="section-tag">Live Project</div>
+        <h2>Introducing RadAIx</h2>
+        <div class="project-card-enhanced">
+            <div class="project-content">
+                <div class="project-badge">Healthcare AI</div>
+                <h3>AI-Powered Diagnostic Imaging for Faster Care</h3>
+                <p class="project-subtitle">Built for African hospitals where every minute matters</p>
+                <p>RadAIx detects intracranial hemorrhages from CT scans in seconds, supports DICOM workflows, and enables real-time alerts so clinicians can prioritize urgent cases faster.</p>
+                
+                <div class="project-stats-mini">
+                    <div class="mini-stat">
+                        <strong>&lt; 10s</strong>
+                        <span>Analysis Time</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>24/7</strong>
+                        <span>Monitoring</span>
+                    </div>
+                    <div class="mini-stat">
+                        <strong>5</strong>
+                        <span>Hemorrhage Types</span>
+                    </div>
+                </div>
+                
+                <a href="{{ url_for('pacs') }}" class="btn-primary">View Full Case Study →</a>
+            </div>
+            <div class="project-visual">
+                <div class="project-icon-large">🧠</div>
+                <div class="tech-badges">
+                    <span>Intracranial Hemorrhage Detection</span>
+                    <span>DICOM Integration</span>
+                    <span>Real-Time Alerts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Kenshi.AI</h2>
+            <p>The difference is local: we build with Rwandan talent for African needs, creating sustainable value that stays in our communities.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">🎯</div>
+                <h3>100% African Focus</h3>
+                <p>Unlike imported solutions, we build with African talent for African needs, creating sustainable value that stays in our communities.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">💡</div>
+                <h3>Hands-On Learning</h3>
+                <p>Not just theory—we train people on real projects with real impact, building portfolios that get jobs done.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">💰</div>
+                <h3>Affordable Excellence</h3>
+                <p>World-class AI expertise at affordable prices. No need for expensive consultants.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🤝</div>
+                <h3>End-to-End Support</h3>
+                <p>From idea to deployment, we're with you every step—training, development, and ongoing support.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🚀</div>
+                <h3>Proven Innovation</h3>
+                <p>RadAIx is actively being developed to improve diagnostic speed and patient outcomes.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🏛️</div>
+                <h3>Vision 2050 Aligned</h3>
+                <p>Supporting Rwanda's digital transformation and knowledge-based economy goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <h2>Our Core Capabilities</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>AI, Data Science & Engineering</h3>
+                <p>Intelligent automation, computer vision, predictive analytics, and BI - transforming data into real business value.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎓</div>
+                <h3>AI Talent Development</h3>
+                <p>From high school introductions to professional AI training - building the next generation of African AI practitioners.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Innovation Support</h3>
+                <p>Turn ideas into real products with technical expertise, rapid prototyping, and practical roadmaps.</p>
+            </div>
+        </div>
+        <div class="center-btn">
+            <a href="{{ url_for('services') }}" class="btn-secondary">Explore Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners-section">
+    <div class="container">        
+        <div class="partner-cta">
+            <h3>Want to Partner With Us?</h3>
+            <p>Join our growing network of organizations committed to AI excellence in Africa</p>
+            <a href="{{ url_for('contact') }}" class="btn-secondary">Become a Partner</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Transform with AI?</h2>
+        <p>Whether you're a healthcare facility, business, student, or innovator - let's build together.</p>
+        <div class="cta-buttons">
+            <a href="{{ url_for('contact') }}" class="btn-primary">Start Your AI Journey</a>
+            <a href="{{ url_for('services') }}" class="btn-secondary">Explore Services</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

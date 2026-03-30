@@ -12,6 +12,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Smooth scroll to hash on page load (e.g. links like `services.html#some-section`)
+window.addEventListener('load', () => {
+    if (!window.location.hash) return;
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+});
+
 // Theme toggle (default is dark)
 function getCssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();

@@ -117,6 +117,84 @@ footer {
     align-items: center;
 }
 
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 14px; /* hover bridge to prevent dropdown from disappearing */
+}
+
+.nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.dropdown-caret {
+    display: inline-block;
+    font-size: 0.75em;
+    transform: translateY(1px);
+    opacity: 0.9;
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+}
+
+.nav-dropdown:hover .dropdown-caret {
+    transform: translateY(1px) rotate(180deg);
+    opacity: 1;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 240px;
+    list-style: none;
+    padding: 0.6rem;
+    margin: 0;
+    border-radius: 14px;
+    border: 1px solid rgba(139, 148, 158, 0.18);
+    background: var(--nav-bg-scrolled);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 1200;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.65rem 0.8rem;
+    border-radius: 10px;
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.dropdown-menu a:hover {
+    color: var(--light);
+    background: rgba(10, 132, 255, 0.12);
+}
+
 .nav-menu a {
     color: var(--gray);
     text-decoration: none;
@@ -1071,6 +1149,7 @@ footer {
     border-radius: 20px;
     border: 1px solid rgba(139, 148, 158, 0.1);
     margin-bottom: 3rem;
+    scroll-margin-top: 120px; /* prevent content being hidden behind the fixed navbar */
 }
 
 .service-icon-large {

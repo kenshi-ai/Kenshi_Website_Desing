@@ -18,8 +18,24 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li class="nav-dropdown">
+                    <a href="services.html" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <span class="dropdown-caret" aria-hidden="true">▾</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Services submenu">
+                        <li><a href="#data-analytics-automation">Data Analytics &amp; Automation</a></li>
+                        <li><a href="#innovation-support">Innovation Support</a></li>
+                        <li><a href="#skills-development">Skills Development</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="projects.html" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Projects <span class="dropdown-caret" aria-hidden="true">▾</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Projects submenu">
+                        <li><a href="projects.html#radaix">RadAIx (PACS + AI)</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
             <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to light mode" title="Switch theme">
@@ -40,7 +56,7 @@
 
         <section class="services-detail">
             <div class="container">
-                <div class="service-detail-card">
+                <div class="service-detail-card" id="data-analytics-automation">
                     <div class="service-icon-large">📊</div>
                     <h2>Data Analytics & Automation</h2>
                     <p class="service-desc">
@@ -63,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="service-detail-card">
+                <div class="service-detail-card" id="innovation-support">
                     <div class="service-icon-large">💡</div>
                     <h2>Innovation Support</h2>
                     <p class="service-desc">
@@ -86,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="service-detail-card">
+                <div class="service-detail-card" id="skills-development">
                     <div class="service-icon-large">🎓</div>
                     <h2>Skills Development</h2>
                     <p class="service-desc">

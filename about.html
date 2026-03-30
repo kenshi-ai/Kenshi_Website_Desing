@@ -18,8 +18,24 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li class="nav-dropdown">
+                    <a href="services.html" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <span class="dropdown-caret" aria-hidden="true">▾</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Services submenu">
+                        <li><a href="services.html#data-analytics-automation">Data Analytics &amp; Automation</a></li>
+                        <li><a href="services.html#innovation-support">Innovation Support</a></li>
+                        <li><a href="services.html#skills-development">Skills Development</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="projects.html" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Projects <span class="dropdown-caret" aria-hidden="true">▾</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Projects submenu">
+                        <li><a href="projects.html#radaix">RadAIx (PACS + AI)</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
             <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to light mode" title="Switch theme">
@@ -92,12 +108,12 @@
                 <div class="mv-grid">
                     <div class="mv-card mission">
                         <span class="section-tag">Mission</span>
-                        <h3>What We 're Here to Do</h3>
+                        <h3>What We Are Here to Do</h3>
                         <p>We deliver innovative, efficient, and inclusive technology solutions that solve complex problems, empower users, and support Rwanda's knowledge-based economy while building sustainable AI capacity across Africa.</p>
                     </div>
                     <div class="mv-card vision">
                         <span class="section-tag">Vision</span>
-                        <h3>Where We 're Going</h3>
+                        <h3>Where We Are Going</h3>
                         <p>We aim to become a leading Pan-African technology enabler, advancing digital transformation through ethical, intelligent, and contextually relevant AI and software solutions built by local talent for local challenges.</p>
                     </div>
                 </div>

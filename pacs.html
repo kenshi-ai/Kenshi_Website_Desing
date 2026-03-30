@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadAIx - Kenshi.AI</title>
+    <link rel="icon" type="image/png" href="/static/img/kenshi-logo.png">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/static/img/kenshi-logo.png" alt="Kenshi.AI logo" class="logo-mark">
+                <span class="logo-text">KENSHI.AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to light mode" title="Switch theme">
+                <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+                <span class="theme-toggle-label">Light</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- RadAIx Hero -->
+        <section class="pacs-hero">
+            <div class="container">
+                <div class="pacs-header">
+                    <div class="pacs-hero-icons" aria-hidden="true">
+                        <span>🧠</span>
+                        <span class="plus">+</span>
+                        <span>🏥</span>
+                    </div>
+                    <div class="label label-orange" style="margin:0 auto 20px">🚀 Live Project</div>
+                    <h1>RadAIx</h1>
+                    <p class="subtitle">Intelligent imaging for faster, life-saving diagnostics - built in Rwanda for Africa.</p>
+                    <div class="badge-row" aria-label="RadAIx key points">
+                        <span class="badge">First module: Intracranial Hemorrhage Detection</span>
+                        <span class="badge">Real-time AI analysis</span>
+                        <span class="badge">Built in Rwanda</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="problem-solution-section">
+            <div class="container">
+                <div class="challenge-block">
+                    <p class="big-text">
+                        In Rwanda, there is <strong>1 radiologist per 1.5 million people</strong> - far below the WHO recommendation of 1 per 100,000.
+                        A brain hemorrhage patient can wait hours or days for diagnosis. <strong>Every hour of delay increases mortality risk by 20%.</strong>
+                    </p>
+                </div>
+
+                <div class="section-header">
+                    <h2>Before and After RadAIx</h2>
+                    <p>RadAIx turns scans into actionable clinical alerts - faster, safer, smarter.</p>
+                </div>
+
+                <div class="compare-grid">
+                    <div class="compare-card bad">
+                        <h3>Without RadAIx</h3>
+                        <ul>
+                            <li>CT scan waits in queue for hours or days</li>
+                            <li>Manual prioritization of urgent cases</li>
+                            <li>Subtle hemorrhages may be missed</li>
+                            <li class="outcome">Delayed treatment - higher mortality risk</li>
+                        </ul>
+                    </div>
+                    <div class="compare-card good">
+                        <h3>With RadAIx</h3>
+                        <ul>
+                            <li>CT scan gets instant AI analysis</li>
+                            <li>Results delivered in under 10 seconds</li>
+                            <li>Automatic urgent-case flagging</li>
+                            <li>Visual heatmaps highlighting bleeding areas</li>
+                            <li class="outcome">Immediate alerts - faster intervention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How RadAIx Works</h2>
+                    <p>A 5-step workflow from scan upload to real-time clinical alerts.</p>
+                </div>
+
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-num">01</div>
+                        <div>
+                            <h3>CT Scan Upload</h3>
+                            <p>Medical images are uploaded to RadAIx through standard DICOM workflows - no disruption for hospital staff.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">02</div>
+                        <div>
+                            <h3>AI Analysis</h3>
+                            <p>Deep learning analyzes each slice and detects hemorrhage subtypes.</p>
+                            <div class="subtype-tags" aria-label="Hemorrhage subtypes">
+                                <span>Intraparenchymal (IPH)</span>
+                                <span>Subarachnoid (SAH)</span>
+                                <span>Subdural (SDH)</span>
+                                <span>Epidural (EDH)</span>
+                                <span>Intraventricular (IVH)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">03</div>
+                        <div>
+                            <h3>Visual Intelligence</h3>
+                            <p>Generates heatmaps and confidence scores (0-100%) to explain what the model is seeing.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">04</div>
+                        <div>
+                            <h3>Priority Flagging</h3>
+                            <p>Suspected hemorrhages move to the top of the worklist with urgency indicators.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">05</div>
+                        <div>
+                            <h3>Clinical Alert</h3>
+                            <p>Real-time notifications can reach emergency teams so treatment can start sooner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Features -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Built for Real-World Healthcare</h2>
+                    <p>Designed for African hospitals, including low-connectivity environments.</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>Seamless Integration</h3>
+                        <p>Connects to existing PACS via DICOM for minimal IT burden and no workflow changes for clinicians.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Works in Low Connectivity</h3>
+                        <p>Designed to function reliably in constrained environments and support notifications for remote consultations.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Learns Over Time</h3>
+                        <p>Radiologist feedback can help improve performance and adapt to local data over time.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Secure by Design</h3>
+                        <p>Security-first approach with encryption and access controls suitable for clinical environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Metrics -->
+        <div class="impact-metrics">
+            <div class="impact-stat"><span class="num">20%</span><span class="lbl">Mortality risk per hour of delay</span></div>
+            <div class="impact-stat"><span class="num">&lt;10s</span><span class="lbl">AI analysis time</span></div>
+            <div class="impact-stat"><span class="num">24/7</span><span class="lbl">Continuous screening</span></div>
+            <div class="impact-stat"><span class="num">1.5M:1</span><span class="lbl">Radiologist gap we're bridging</span></div>
+        </div>
+
+        <!-- Benefits -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Who It Helps</h2>
+                    <p>Faster detection supports better outcomes for patients and more efficient workflows for clinicians.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">❤️</div>
+                        <h3>Patients</h3>
+                        <p>Earlier detection of life-threatening conditions for faster treatment and better outcomes.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👨‍⚕️</div>
+                        <h3>Radiologists</h3>
+                        <p>Reduced workload with AI-assisted triage and decision support.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏥</div>
+                        <h3>Hospitals</h3>
+                        <p>Reduced diagnostic delays and better resource utilization using existing infrastructure.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌍</div>
+                        <h3>Health Systems</h3>
+                        <p>More equitable access to diagnostics regardless of location or time of day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section class="conclusion-section">
+            <div class="container">
+                <div class="conclusion-box">
+                    <h2>RadAIx: Scalable Diagnostic Platform</h2>
+                    <p class="large-text">RadAIx is modular - additional diagnostic modules are coming as we expand capability across imaging workflows.</p>
+                    <div class="module-pills" aria-label="Upcoming modules">
+                        <span class="module-pill">Ischemic Stroke Detection</span>
+                        <span class="module-pill">Pulmonary Embolism</span>
+                        <span class="module-pill">Fracture Detection</span>
+                        <span class="module-pill">Mass Effect and Tumors</span>
+                        <span class="module-pill">Chest X-Ray Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Bring RadAIx to Your Hospital</h2>
+                <p>Partner with Kenshi.AI to deploy RadAIx and accelerate imaging diagnostics.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Request a Demo</a>
+                    <a href="services.html" class="btn-secondary">View Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/250780660716?text=Hello%20Kenshi%20AI%20Hub%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20AI%20solutions%20and%20training."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener">
+        <img src="/static/img/whatsapp.png"
+             alt="Chat with us on WhatsApp"
+             class="whatsapp-icon">
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AI & Digital Innovation Hub</h3>
+                <p>Building AI capacity across Africa through practical training, innovation support, and data-driven solutions.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:kenshi.ltd@gmail.com">kenshi.ltd@gmail.com</a></p>
+                <p>Phone: +250 780 660 716</p>
+                <p>Location: Kigali, Rwanda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI & Digital Innovation Hub. All rights reserved. Building the future of AI across Africa.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

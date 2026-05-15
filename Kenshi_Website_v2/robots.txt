@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Keep pacs.html private — not for indexing
+Disallow: /pacs.html
+Disallow: /contact.php
+Disallow: /static/
+
+Sitemap: https://kenshiai.com/sitemap.xml
